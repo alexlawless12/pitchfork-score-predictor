@@ -1,12 +1,12 @@
 # pitchfork-score-predictor
 
-##INTRODUCTION
+## INTRODUCTION
 
 Pitchfork is a popular music publication that has been the target of increased controversy over the years from internet-based music communities. One of the most famous Pitchfork series is its album review series. Along with a detailed review of one editor’s opinions about the album’s sonic and lyrical value, each of these reviews is published along with a score from 1-10. The issue of representing musical quality with a numeric value is undoubtedly a controversial one, but it does provide a very effective way for the editors to recommend music that they enjoyed and identify music that they didn’t. 
 
 We acknowledge the usefulness of this numerical reduction, but were also curious about the complexity and consistency of this process. It is typically clear from an extensive review on Pitchfork’s site which aspects of the music they enjoyed and which they didn’t, but we wanted to go a bit further and see if any of these factors had an especially large part to play on the eventual score the album received. Are some scores biased towards more popular albums? Are most scores even consistent with the sentiments expressed by the reviewer in their long review? These were burning questions we felt would best be approached through a big data approach informed by machine learning. We sought to find which statistics of an album were most commonly correlated with higher scores, and hoped to be able to build an algorithm to predict those scores.
 
-##DATA COLLECTION
+## DATA COLLECTION
 	
 	Our data collection process took place in 2 stages, first the collection of data from Pitchfork reviews, and secondly, a collection of data from Spotify’s API.
 
@@ -28,9 +28,9 @@ In the end, our dataset had x features, including album artist (name: string), t
 Word Cloud: I wanted to look at the word cloud to see if there is any word that jumps out to me. However, the most commonly used words are ones that you would find in a song review regardless so I don’t think that the word cloud provides much insight into the data.
 
 
-##METHOD:
+## METHOD:
 
-###Correlation Analysis
+### Correlation Analysis
 > Release Year: Most of the albums are released in the 2000s but there are still a few reviews on albums released prior to this date
 
 > Pitchfork Score Distribution: The distribution is relatively normal, but the mean is pretty high, indicating that Pitchfork generally give pretty high ratings.
